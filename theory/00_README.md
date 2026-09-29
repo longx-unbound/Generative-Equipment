@@ -38,9 +38,9 @@
 
 ## 收录范围
 
-收录 Frozen 原始包、Strict v0.1/v0.2 及审计、GE-R1–R35、ENDO-1–6、Horizon 系列，以及 C1 纳入的 moment-angle、DGLA、SNT 和 DHH 接口文件。`GE-Rn` 与 `DHH-Rn` 严格分开。
+收录 Frozen 原始包、Strict v0.1/v0.2 及审计、GE-R1–R35、ENDO-1–6、Horizon 系列，以及 C1 纳入的 moment-angle、DGLA、SNT 等接口文件。
 
-QWGS、Φ 系列、独立数论／物理项目以及完整 DHH 长链不属于 C1 的逐项审查范围。DHH 部分仅记录 C1 收录的策略与 R96 快照，不代表 DHH 项目的全部后续状态。
+
 
 ## 原文保护与证据地位
 
