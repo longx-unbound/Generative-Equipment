@@ -1,0 +1,1662 @@
+[
+  {
+    "id": "K01",
+    "module": "core",
+    "status": "DEF",
+    "title": "Frozen语义契约",
+    "hypotheses": "声明语义宇宙与允许的丰富化",
+    "statement": "Xi、预目标P、饱和、实际比较、独立观察、来源构成冻结工作数据",
+    "sources": [
+      "S00",
+      "S03"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §2",
+    "depends_on": [],
+    "originality": "研究架构；不作首创认证",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "K02",
+    "module": "core",
+    "status": "DEF",
+    "title": "对象实现纤维",
+    "hypotheses": "C:A→F，给ξ",
+    "statement": "Eff_C(ξ)=A^core×_(F^core){ξ}",
+    "sources": [
+      "S00",
+      "S05"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §5",
+    "depends_on": [
+      "K01"
+    ],
+    "originality": "标准同伦纤维用途",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "K03",
+    "module": "core",
+    "status": "DEF",
+    "title": "可能性与普遍locus",
+    "hypotheses": "饱和空间值P",
+    "statement": "元素范畴、其core及初始对象locus分别保留",
+    "sources": [
+      "S00",
+      "S05"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §4",
+    "depends_on": [
+      "K01"
+    ],
+    "originality": "未确认文献首创",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "K04",
+    "module": "core",
+    "status": "DEF",
+    "title": "相对观察新颖性",
+    "hypotheses": "旧基线、固定N及等价",
+    "statement": "OldMatch为空定义观察相对新颖性",
+    "sources": [
+      "S00",
+      "S05"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [
+      "K01"
+    ],
+    "originality": "未确认文献首创",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "K05",
+    "module": "core",
+    "status": "OPEN",
+    "title": "完整最小性／独立性",
+    "hypotheses": "需先固定正式公理语言",
+    "statement": "本版数据分离例子不构成最小公理基证明",
+    "sources": [
+      "S00",
+      "S05"
+    ],
+    "proof_location": "06_CORE_MINIMALITY_AND_RESEARCH_PROTOCOL.md §2",
+    "depends_on": [
+      "K01"
+    ],
+    "originality": "未确认文献首创",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G01",
+    "module": "genesis",
+    "status": "STD",
+    "title": "余表示与初始对象",
+    "hypotheses": "空间值covariant problem",
+    "statement": "P(a,-)余表示 iff 元素范畴初始对象存在",
+    "sources": [
+      "S05",
+      "S07"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §4",
+    "depends_on": [
+      "K03"
+    ],
+    "originality": "Yoneda标准推论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G02",
+    "module": "genesis",
+    "status": "STD",
+    "title": "逐点表示相干组装",
+    "hypotheses": "问题已是双变量函子，全部纤维可余表示",
+    "statement": "由Yoneda全忠实性得到表示函子及相干性",
+    "sources": [
+      "S07",
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §4",
+    "depends_on": [
+      "G01"
+    ],
+    "originality": "标准Yoneda",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G03",
+    "module": "genesis",
+    "status": "COND",
+    "title": "可达极限保持识别",
+    "hypotheses": "presentable B，H:B→Spaces可达且保所有小极限",
+    "statement": "H余表示为Map(L(*),-)",
+    "sources": [
+      "S01",
+      "S05"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §4",
+    "depends_on": [
+      "G01"
+    ],
+    "originality": "经典伴随识别",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G04",
+    "module": "genesis",
+    "status": "STD",
+    "title": "自然运算恢复",
+    "hypotheses": "F⊣U",
+    "statement": "Nat(U^n,U)=UF(n)",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [],
+    "originality": "Lawvere/Yoneda",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G05",
+    "module": "genesis",
+    "status": "COND",
+    "title": "Lawvere模型重建",
+    "hypotheses": "U单子性且UF有限元",
+    "statement": "K由自然运算的有限乘积理论重建",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [
+      "G04"
+    ],
+    "originality": "经典Lawvere理论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G06",
+    "module": "genesis",
+    "status": "STD",
+    "title": "Gabriel–Ulmer重建",
+    "hypotheses": "K局部有限可表示",
+    "statement": "K≃Lex((K_fp)^op,Set)",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [],
+    "originality": "经典Gabriel–Ulmer",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G07",
+    "module": "genesis",
+    "status": "STD",
+    "title": "正规存在量词",
+    "hypotheses": "有限极限、稳定正规像",
+    "statement": "∃_f=im(f-)左伴随f*，满足相应换基",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [],
+    "originality": "经典范畴逻辑",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G08",
+    "module": "genesis",
+    "status": "COND",
+    "title": "全称／蕴含提取",
+    "hypotheses": "相关右伴随与换基相容存在",
+    "statement": "逻辑操作由泛性质唯一确定",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [
+      "G07"
+    ],
+    "originality": "经典伴随语义",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G09",
+    "module": "genesis",
+    "status": "DER",
+    "title": "Sub语义负控制",
+    "hypotheses": "二维F2向量空间或稳定∞范畴",
+    "statement": "前者格不分配；后者所有mono是等价，Sub退化",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO5_Structural_Logic_Recovery_2026-09-29.md §§5,9",
+    "depends_on": [],
+    "originality": "直接结构推论；不作首创声明",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G10",
+    "module": "genesis",
+    "status": "STD",
+    "title": "Institution相容性",
+    "hypotheses": "签名、句子、模型约化和满足关系均给出",
+    "statement": "F′⊨Sen(h)φ iff h*F′⊨φ",
+    "sources": [
+      "S35",
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [],
+    "originality": "Goguen–Burstall标准定义/构造",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G11",
+    "module": "genesis",
+    "status": "COND",
+    "title": "高阶／依赖／变形语言恢复",
+    "hypotheses": "指定κ、完整mapping或clan/WFS、参数基域等领域条件",
+    "statement": "在对应对偶定理范围内重建语言或控制器",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §12",
+    "depends_on": [],
+    "originality": "经典与已发表领域定理",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G12",
+    "module": "genesis",
+    "status": "DER",
+    "title": "距离谓词恢复",
+    "hypotheses": "有限值对称度量空间",
+    "statement": "d(x,y)=sup_(f 1-Lipschitz)|f(x)−f(y)|",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO5_Structural_Logic_Recovery_2026-09-29.md §11",
+    "depends_on": [],
+    "originality": "直接度量/Yoneda型事实",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G13",
+    "module": "genesis",
+    "status": "STD",
+    "title": "Th–Mod Galois",
+    "hypotheses": "固定满足关系与大小范围",
+    "statement": "X⊂ModΓ iff Γ⊂ThX",
+    "sources": [
+      "S35"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §13",
+    "depends_on": [],
+    "originality": "标准语义Galois",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G14",
+    "module": "genesis",
+    "status": "DER",
+    "title": "模型法则共同稳定",
+    "hypotheses": "集合模型范围，K单调扩张",
+    "statement": "Def∘K迭代得到最小共同固定点X*",
+    "sources": [
+      "S35"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §13",
+    "depends_on": [
+      "G13"
+    ],
+    "originality": "标准闭包综合",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G15",
+    "module": "genesis",
+    "status": "DER",
+    "title": "最大安全理论",
+    "hypotheses": "G14条件",
+    "statement": "ThX*是对所有X*模型成立的最大law集",
+    "sources": [
+      "S35"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §13",
+    "depends_on": [
+      "G14"
+    ],
+    "originality": "Galois直接推论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G16",
+    "module": "genesis",
+    "status": "DER",
+    "title": "描述理论空缺陷边界",
+    "hypotheses": "Θ*=ThX*",
+    "statement": "X*内无违反Θ*的模型；不自动驱动修补",
+    "sources": [
+      "S36"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C13",
+    "depends_on": [
+      "G15"
+    ],
+    "originality": "直接逻辑结论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "G17",
+    "module": "genesis",
+    "status": "DEF",
+    "title": "law死亡阶数",
+    "hypotheses": "已固定扩张迭代",
+    "statement": "首次被新增模型推翻的ordinal，依赖语义和continuation",
+    "sources": [
+      "S35"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO4_Law_Signature_Genesis_2026-09-29.md",
+    "depends_on": [
+      "G14"
+    ],
+    "originality": "未确认文献首创",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E01",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "等价的对象／映射识别",
+    "hypotheses": "∞范畴比较C",
+    "statement": "全忠实+本质满 iff 等价",
+    "sources": [
+      "S05",
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §5",
+    "depends_on": [
+      "K02"
+    ],
+    "originality": "标准范畴判据",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E02",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "纤维极限交换",
+    "hypotheses": "实际范畴本身为比较图的极限",
+    "statement": "Eff_(lim C_i)(ξ)≃holim Eff_(C_i)(ξ_i)",
+    "sources": [
+      "S07",
+      "S08",
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §6",
+    "depends_on": [
+      "K02"
+    ],
+    "originality": "极限交换",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E03",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "有限Reedy匹配",
+    "hypotheses": "有限逆范畴、Reedy纤维化替代、实际遇到匹配纤维非空",
+    "statement": "逐个下闭扩充得到相干全局点",
+    "sources": [
+      "S09",
+      "S15"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §6",
+    "depends_on": [
+      "E02"
+    ],
+    "originality": "经典Reedy逐步展开",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E04",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "相对可缩匹配",
+    "hypotheses": "E03并所有相对fiber可缩",
+    "statement": "给定边界的完整填充空间可缩",
+    "sources": [
+      "S09",
+      "S15"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §6",
+    "depends_on": [
+      "E03"
+    ],
+    "originality": "标准",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E05",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "R3–Postnikov阿贝尔比较",
+    "hypotheses": "有限CW底、相应截断与局部系数条件",
+    "statement": "同一障碍／提升理论的cellular解析，不是raw塔等价",
+    "sources": [
+      "S11",
+      "S18",
+      "S19"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §6",
+    "depends_on": [
+      "E03"
+    ],
+    "originality": "经典障碍理论的项目解析",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E06",
+    "module": "effectivity",
+    "status": "OPEN",
+    "title": "一般非阿贝尔fringe完整模型",
+    "hypotheses": "需明确bands、gerbes及作用",
+    "statement": "不能只把非阿贝尔H²当群写出通用计算",
+    "sources": [
+      "S19"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_R9_R12_Strict_Reality_Audit_R13.md §2.2",
+    "depends_on": [
+      "E05"
+    ],
+    "originality": "未确认文献首创",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E07",
+    "module": "effectivity",
+    "status": "DEF",
+    "title": "Viability精确像",
+    "hypotheses": "已给终点解空间",
+    "statement": "终点到中间同伦像记录可延续分支；非独立算法",
+    "sources": [
+      "S13",
+      "S14",
+      "S19"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §6",
+    "depends_on": [
+      "K02"
+    ],
+    "originality": "标准像/递归规范",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E08",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "Fubini／相容交换",
+    "hypotheses": "真正迭代limits/images与正确对角比较",
+    "statement": "相应迭代相容结果；不由两面存在推出整立方可填",
+    "sources": [
+      "S14",
+      "S15"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §6",
+    "depends_on": [
+      "E03",
+      "E07"
+    ],
+    "originality": "标准图式/极限",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E09",
+    "module": "effectivity",
+    "status": "DER",
+    "title": "无统一有界测试秩",
+    "hypotheses": "无限正则κ，离散尾集塔",
+    "statement": "全部<κ子系统非空而整体空",
+    "sources": [
+      "S07",
+      "S08"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md A",
+    "depends_on": [],
+    "originality": "显式反例；首创未确认",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E10",
+    "module": "effectivity",
+    "status": "DEF",
+    "title": "相对Horizon completion",
+    "hypotheses": "完整相容比较方块",
+    "statement": "Ahor=F×_(Fhat)Ahat，δ:A→Ahor",
+    "sources": [
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §7",
+    "depends_on": [
+      "K02"
+    ],
+    "originality": "标准pullback定义",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E11",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "Horizon纤维识别",
+    "hypotheses": "E10",
+    "statement": "holim有限fiber等于Ahor→F的fiber",
+    "sources": [
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §7",
+    "depends_on": [
+      "E02",
+      "E10"
+    ],
+    "originality": "极限标准推论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E12",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "Horizon完备重述",
+    "hypotheses": "E10",
+    "statement": "全部ηξ等价 iff δ^core等价；全语义需δ等价",
+    "sources": [
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §7",
+    "depends_on": [
+      "E11"
+    ],
+    "originality": "重述；不是领域存在证明",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E13",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "双侧horizon重建",
+    "hypotheses": "α、β都是等价",
+    "statement": "相对Horizon强完备",
+    "sources": [
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §8",
+    "depends_on": [
+      "E12"
+    ],
+    "originality": "pullback标准推论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E14",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "左完备稳定引擎",
+    "hypotheses": "两侧left-complete t结构，比较与截断相容",
+    "statement": "对应ηξ等价",
+    "sources": [
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §8",
+    "depends_on": [
+      "E13"
+    ],
+    "originality": "经典完备性输入",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E15",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "I-adic有限模效性",
+    "hypotheses": "Noether环与理想，有限兼容模系统",
+    "statement": "有限Ahat模与兼容有限商模范畴等价",
+    "sources": [
+      "S41",
+      "S42"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §8",
+    "depends_on": [],
+    "originality": "Stacks经典定理",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E16",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "component-ML存在推广",
+    "hypotheses": "可数塔每层非空、component ML、Horizon完备",
+    "statement": "全局Eff非空",
+    "sources": [
+      "S08",
+      "S41"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §8",
+    "depends_on": [
+      "E12"
+    ],
+    "originality": "标准ML/holim综合",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E17",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "有限非空components",
+    "hypotheses": "可数塔的π0有限非空",
+    "statement": "component ML及相干极限非空",
+    "sources": [
+      "S41"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §8",
+    "depends_on": [],
+    "originality": "有限下降链/可数选择",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E18",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "branch-relative Milnor",
+    "hypotheses": "相容基点分支与tower模型",
+    "statement": "lim¹高同伦项控制global correction；低阶分类型",
+    "sources": [
+      "S08",
+      "S41"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §8",
+    "depends_on": [],
+    "originality": "经典Milnor/Bousfield–Kan",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E19",
+    "module": "effectivity",
+    "status": "DER",
+    "title": "统一有限指数夹逼",
+    "hypotheses": "固定层全部高层群像包含同一有限指数H",
+    "statement": "像链ML",
+    "sources": [
+      "S40",
+      "S41"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md F1",
+    "depends_on": [],
+    "originality": "初等群论组合",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E20",
+    "module": "effectivity",
+    "status": "DEF",
+    "title": "actualization frontier",
+    "hypotheses": "固定C与完整formal候选",
+    "statement": "空Eff纤维定义frontier，不自动可判定",
+    "sources": [
+      "S37"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §§5,25",
+    "depends_on": [
+      "K02"
+    ],
+    "originality": "标准本质像用途",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E21",
+    "module": "effectivity",
+    "status": "STD",
+    "title": "仿射Coupl判据",
+    "hypotheses": "阿贝尔群值函数q",
+    "statement": "cr2(q)=0 iff q−q(0)加性",
+    "sources": [
+      "S12",
+      "S16"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §9",
+    "depends_on": [],
+    "originality": "经典有限差分",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E22",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "相对幂零分层",
+    "hypotheses": "IG^cM=0等实际monodromy条件",
+    "statement": "successive quotients作用平凡；extension仍保留",
+    "sources": [
+      "S17",
+      "S19"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §9",
+    "depends_on": [],
+    "originality": "经典增广理想过滤",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E23",
+    "module": "effectivity",
+    "status": "COND",
+    "title": "Primary最优元数界",
+    "hypotheses": "作用型常系数primary，E(r−1)连通，degree q",
+    "statement": "degree Coupl≤floor(q/r)",
+    "sources": [
+      "S21",
+      "S22"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §9",
+    "depends_on": [],
+    "originality": "连通性/cross-effect综合",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "E24",
+    "module": "effectivity",
+    "status": "DER",
+    "title": "两阶段任意高阶族",
+    "hypotheses": "d≥2，u^d:K(Z,2)→K(Z,2d)",
+    "statement": "fiber仅两非零同伦群但primary次数d可任意大",
+    "sources": [
+      "S21",
+      "S22"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §9",
+    "depends_on": [
+      "E23"
+    ],
+    "originality": "显式经典对象计算；首创未确认",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M01",
+    "module": "mutation",
+    "status": "DEF",
+    "title": "Repair Profile",
+    "hypotheses": "明确完整repair范畴",
+    "statement": "初始locus、core、类型与isotropy独立记录",
+    "sources": [
+      "S32",
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §14",
+    "depends_on": [
+      "K03"
+    ],
+    "originality": "新组织用途；成分标准",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M02",
+    "module": "mutation",
+    "status": "STD",
+    "title": "相干pointed单次repair",
+    "hypotheses": "pushout存在，兼容2-simplex作为数据",
+    "statement": "Rep^pt≃Gram_(P/)",
+    "sources": [
+      "S32"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §15",
+    "depends_on": [],
+    "originality": "pushout泛性质",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M03",
+    "module": "mutation",
+    "status": "COND",
+    "title": "空间参数batchrepair",
+    "hypotheses": "余完备，完整D→Map(A,G) evaluation",
+    "statement": "P=G⊔_(A⊗D)(B⊗D)表示相干选定填充",
+    "sources": [
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §15",
+    "depends_on": [
+      "M02"
+    ],
+    "originality": "copower/pushout泛性质",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M04",
+    "module": "mutation",
+    "status": "COND",
+    "title": "Adjoint受约束repair",
+    "hypotheses": "U:RK→R0有F左伴随，R0初始0",
+    "statement": "F0初始",
+    "sources": [
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §16",
+    "depends_on": [
+      "M02"
+    ],
+    "originality": "左伴随保持初始",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M05",
+    "module": "mutation",
+    "status": "COND",
+    "title": "algebraic filler引擎",
+    "hypotheses": "locally presentable、合适小生成提升数据",
+    "statement": "自由coherent algebraic lifting structure存在",
+    "sources": [
+      "S31",
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §16",
+    "depends_on": [],
+    "originality": "Garner/Bourke–Garner",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M06",
+    "module": "mutation",
+    "status": "COND",
+    "title": "唯一性／等价localization",
+    "hypotheses": "presentable、小生成maps",
+    "statement": "local objects形成可达反射",
+    "sources": [
+      "S31",
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §16",
+    "depends_on": [],
+    "originality": "经典可达局部化",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M07",
+    "module": "mutation",
+    "status": "COND",
+    "title": "自由weightedcompletion",
+    "hypotheses": "合适enrichment、权类、大小假设",
+    "statement": "给定类余极限的自由完成",
+    "sources": [
+      "S31"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO3_Grammar_Genesis_and_Universal_Repair_2026-09-29.md §10",
+    "depends_on": [],
+    "originality": "Kelly–Schmitt",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M08",
+    "module": "mutation",
+    "status": "DER",
+    "title": "无unpointed平方根初始repair",
+    "hypotheses": "Q代数含某个平方根2",
+    "statement": "该非空范畴无初始对象；chosen root有初始对象",
+    "sources": [
+      "S31"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO3_Grammar_Genesis_and_Universal_Repair_2026-09-29.md §13",
+    "depends_on": [],
+    "originality": "对称性直接反例",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M09",
+    "module": "mutation",
+    "status": "DER",
+    "title": "张量严格保存不可能",
+    "hypotheses": "faithful exact strong monoidal保Ab_fg普通张量/挠对象",
+    "statement": "无法再要求目标张量逐变量正合",
+    "sources": [
+      "S30",
+      "S31"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §11",
+    "depends_on": [],
+    "originality": "显式零自映射反例",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M10",
+    "module": "mutation",
+    "status": "STD",
+    "title": "有限／链紧松弛frontier",
+    "hypotheses": "可行子契约非空；有限K或链并可行",
+    "statement": "有极大可行子契约",
+    "sources": [
+      "S32",
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §16",
+    "depends_on": [],
+    "originality": "有限偏序/Zorn",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M11",
+    "module": "mutation",
+    "status": "DEF",
+    "title": "Mandatory kernel",
+    "hypotheses": "非空feasible doctrine子集",
+    "statement": "meet是共同内容；自身可行才是最小repair",
+    "sources": [
+      "S32"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §14",
+    "depends_on": [],
+    "originality": "meet定义",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M12",
+    "module": "mutation",
+    "status": "COND",
+    "title": "law-relative编译等价不变",
+    "hypotheses": "小law、Sat-N、输入纤维和满足自然",
+    "statement": "全部坏occurrences在声明等价下运输",
+    "sources": [
+      "S32",
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §17",
+    "depends_on": [],
+    "originality": "相对构造；非普遍协变functor",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M13",
+    "module": "mutation",
+    "status": "DER",
+    "title": "缺陷一般不协变",
+    "hypotheses": "Q→Q(√2)、root-existence law",
+    "statement": "缺陷非空→空，无对应协变空间map",
+    "sources": [
+      "S34"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C07",
+    "depends_on": [],
+    "originality": "本版显式接口反例",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M14",
+    "module": "mutation",
+    "status": "COND",
+    "title": "Compiler语义下降",
+    "hypotheses": "完整functor先存在且反演声明W",
+    "statement": "通过Gram[W−1]下降",
+    "sources": [
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §17",
+    "depends_on": [
+      "M12"
+    ],
+    "originality": "标准localization泛性质",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M15",
+    "module": "mutation",
+    "status": "COND",
+    "title": "修补路径profunctor",
+    "hypotheses": "全部端点运输方差、preservation与coherence已证",
+    "statement": "coend可复合有限路径；保留声明商下provenance",
+    "sources": [
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §17",
+    "depends_on": [],
+    "originality": "Prof标准结构；条件不可省",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M16",
+    "module": "mutation",
+    "status": "STD",
+    "title": "Preclosure转闭包",
+    "hypotheses": "set-sized完备格，T单调扩张",
+    "statement": "clT是T上方最小不动点闭包且幂等",
+    "sources": [
+      "S32",
+      "S35"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §17",
+    "depends_on": [],
+    "originality": "标准不动点",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "M17",
+    "module": "mutation",
+    "status": "COND",
+    "title": "形式稳定转实际稳定",
+    "hypotheses": "实际Ttilde、相关余极限、q相容并反映mutation等价",
+    "statement": "formal stable stage给actual stable stage",
+    "sources": [
+      "S34"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §17",
+    "depends_on": [
+      "M16"
+    ],
+    "originality": "条件性运输；效性前提未免费获得",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O01",
+    "module": "observation",
+    "status": "STD",
+    "title": "稠密probe充分性",
+    "hypotheses": "小i:K→E",
+    "statement": "restricted Yoneda全忠实 iff density",
+    "sources": [
+      "S07",
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [],
+    "originality": "经典density",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O02",
+    "module": "observation",
+    "status": "STD",
+    "title": "反射／余反射保probe/coprobes",
+    "hypotheses": "fully faithful inclusion及相应伴随",
+    "statement": "反射保dense probe；余反射保codense coprobe",
+    "sources": [
+      "S07",
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [
+      "O01"
+    ],
+    "originality": "伴随/Yoneda",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O03",
+    "module": "observation",
+    "status": "COND",
+    "title": "一般localization probe判据",
+    "hypotheses": "λ为categorical localization",
+    "statement": "a*λ*yD全忠实 iff λa dense",
+    "sources": [
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [
+      "O01"
+    ],
+    "originality": "准确重述/检验接口",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O04",
+    "module": "observation",
+    "status": "DER",
+    "title": "pointed naive shadow退化",
+    "hypotheses": "pointed enriched base",
+    "statement": "Map(1,X)非空恒真；不存在保初始strong-unital空间shadow",
+    "sources": [
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [],
+    "originality": "零映射反例",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O05",
+    "module": "observation",
+    "status": "COND",
+    "title": "丰富化change-of-base",
+    "hypotheses": "strong monoidal且保相关coends/limits；必要时保守",
+    "statement": "运输equipment及已给比较的检测",
+    "sources": [
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [],
+    "originality": "经典enriched change-of-base",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O06",
+    "module": "observation",
+    "status": "COND",
+    "title": "持续观察单调性",
+    "hypotheses": "N0=r*N1且旧基线/gauge不变",
+    "statement": "弱观察已区分 ⇒ 强观察仍区分",
+    "sources": [
+      "S05",
+      "S07"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §18",
+    "depends_on": [
+      "K04"
+    ],
+    "originality": "限制函子直接推论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O07",
+    "module": "observation",
+    "status": "STD",
+    "title": "表示动态的oplax方向",
+    "hypotheses": "right-corepresentable Prof transitions",
+    "statement": "Nat(F*,G*)=Nat(G,F)，可逆compositor才给pseudo动态",
+    "sources": [
+      "S07",
+      "S08"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §17.4",
+    "depends_on": [
+      "G01"
+    ],
+    "originality": "co-Yoneda",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "O08",
+    "module": "observation",
+    "status": "STD",
+    "title": "Kan复合与条件换基",
+    "hypotheses": "所需Kan存在；换基comma functor final",
+    "statement": "Lan复合；finality给Beck–Chevalley",
+    "sources": [
+      "S07"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §3.4",
+    "depends_on": [],
+    "originality": "经典Kan/finality",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S01C",
+    "module": "sector",
+    "status": "STD",
+    "title": "弱核与有限关系世界",
+    "hypotheses": "小additive范畴",
+    "statement": "mod(C)核封闭 iff C有弱核",
+    "sources": [
+      "S29"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §10",
+    "depends_on": [],
+    "originality": "经典Freyd",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S02C",
+    "module": "sector",
+    "status": "COND",
+    "title": "正合保真语义",
+    "hypotheses": "小exact范畴及对应deflation覆盖",
+    "statement": "left-exact加法层实现原正合关系",
+    "sources": [
+      "S30"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §11",
+    "depends_on": [],
+    "originality": "经典Gabriel–Quillen/Bühler",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S03C",
+    "module": "sector",
+    "status": "STD",
+    "title": "有限稳定闭包",
+    "hypotheses": "环R，cone/suspension/retract等指定操作",
+    "statement": "thick(R)=Perf(R)",
+    "sources": [
+      "S30"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §11",
+    "depends_on": [],
+    "originality": "经典完美复形",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S04C",
+    "module": "sector",
+    "status": "DER",
+    "title": "截断完美性判据",
+    "hypotheses": "交换环",
+    "statement": "Perf标准截断封闭 iff coherent且fp模有限pd",
+    "sources": [
+      "S30"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO2_Structural_Generation_and_Relative_Completeness_2026-09-29.md",
+    "depends_on": [
+      "S03C"
+    ],
+    "originality": "标准性质综合；首创未确认",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S05C",
+    "module": "sector",
+    "status": "DER",
+    "title": "同步第三轮无界化",
+    "hypotheses": "Noether local非regular；指定原子语法",
+    "statement": "前两轮有界，第三轮k⊗Lk无界",
+    "sources": [
+      "S30"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_ENDO2_Structural_Generation_and_Relative_Completeness_2026-09-29.md",
+    "depends_on": [
+      "S03C",
+      "S04C"
+    ],
+    "originality": "经典regular/Tor判据综合；深度相对",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S06C",
+    "module": "sector",
+    "status": "DER",
+    "title": "支撑成本与等号",
+    "hypotheses": "不交Hochster支撑，非零reduced H^(p_i)",
+    "statement": "|J|≥Σ(p_i+2)；2n等号给missing-edge/crosspolytope环境",
+    "sources": [
+      "S23",
+      "S25"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §20",
+    "depends_on": [],
+    "originality": "输入支撑初等推论；非非平凡Massey最优存在",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S07C",
+    "module": "sector",
+    "status": "DER",
+    "title": "Whole-support收缩",
+    "hypotheses": "union支撑DGA有乘法投影收缩",
+    "statement": "同输入可定义性及0-membership在whole support内检测",
+    "sources": [
+      "S25"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_R19_R23_Five_Step_Generalization_and_Core_Audit.md §1",
+    "depends_on": [],
+    "originality": "DGA retract自然性",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S08C",
+    "module": "sector",
+    "status": "DER",
+    "title": "F2三角齐次化",
+    "hypotheses": "固定不交支撑输入，proper off-support H消失",
+    "statement": "普通defining systems可齐次化且保持顶类",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md B1",
+    "depends_on": [],
+    "originality": "有条件规范化；首创未确认",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S09C",
+    "module": "sector",
+    "status": "DER",
+    "title": "Saturated Hochster方程",
+    "hypotheses": "squarefree moment-angle DGA",
+    "statement": "所有支撑分量方程完整；C^-1需在解中归纳处理",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md B2",
+    "depends_on": [],
+    "originality": "DGA分次展开",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S10C",
+    "module": "sector",
+    "status": "DER",
+    "title": "R22显式ordinary零值",
+    "hypotheses": "指定十边图、F2输入",
+    "statement": "z,t修正保持proper方程且顶曲率归零",
+    "sources": [
+      "S28",
+      "S45"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md B3",
+    "depends_on": [],
+    "originality": "显式反例；本次精确回归",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S11C",
+    "module": "sector",
+    "status": "RETRACT",
+    "title": "R22 ordinary非平凡外推",
+    "hypotheses": "旧restricted非零证据",
+    "statement": "不能推出普通积不含0及非形式性",
+    "sources": [
+      "S25",
+      "S27",
+      "S28"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C15",
+    "depends_on": [],
+    "originality": "已撤回",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S12C",
+    "module": "sector",
+    "status": "REPORT",
+    "title": "512000图完整vanishing",
+    "hypotheses": "八顶点1D connected-corridor F2",
+    "statement": "源报告称全体未定义或含0；完整verifier未定位",
+    "sources": [
+      "S38",
+      "S48"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C18",
+    "depends_on": [],
+    "originality": "未经本次独立核验",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S13C",
+    "module": "sector",
+    "status": "OPEN",
+    "title": "ordinary一骨架不可决定",
+    "hypotheses": "需一对实际同骨架不同复形或独立定理",
+    "statement": "方程含高维面本身不足以证明不变量分离",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C16",
+    "depends_on": [],
+    "originality": "未建立",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S14C",
+    "module": "sector",
+    "status": "DER",
+    "title": "四重饱和变分",
+    "hypotheses": "F2 proper定义方程成立",
+    "statement": "ΔΩ含z12z34及线性/高filler项精确公式",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_R28_R35_Saturation_and_NonSplit_Corrections.md §4",
+    "depends_on": [],
+    "originality": "直接展开",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S15C",
+    "module": "sector",
+    "status": "STD",
+    "title": "固定MC边界H²障碍",
+    "hypotheses": "char0 DGLA、Boolean small extension",
+    "statement": "指定边界可填 iff [Ω]=0",
+    "sources": [
+      "S26",
+      "S27",
+      "S37"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md D",
+    "depends_on": [],
+    "originality": "标准MC障碍",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S16C",
+    "module": "sector",
+    "status": "DER",
+    "title": "三方向intrinsic商障碍",
+    "hypotheses": "pair equations可解",
+    "statement": "H²/Σad_vH¹类零 iff 同方向full3-cube存在",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md D1",
+    "depends_on": [
+      "S15C"
+    ],
+    "originality": "选择饱和直接推论",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S17C",
+    "module": "sector",
+    "status": "DER",
+    "title": "四方向首个可能非线性",
+    "hypotheses": "quadratic MC，固定singletons",
+    "statement": "2+2是首个pair-choice二次交互",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §20",
+    "depends_on": [],
+    "originality": "分拆/展开事实；非所有系统非零",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S18C",
+    "module": "sector",
+    "status": "DER",
+    "title": "九维DGLA完全饱和例",
+    "hypotheses": "S37指定L、char0",
+    "statement": "proper全可解，full4-cube障碍像={w}",
+    "sources": [
+      "S37"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md C",
+    "depends_on": [
+      "S15C",
+      "S17C"
+    ],
+    "originality": "显式构造；首创未认证",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S19C",
+    "module": "sector",
+    "status": "DER",
+    "title": "九维例子的quartic正规形",
+    "hypotheses": "S18C、普通局部Artin参数",
+    "statement": "MC等价a1a2a3a4=0，集合函子由相应完备环表示",
+    "sources": [
+      "S37"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md C1",
+    "depends_on": [
+      "S18C"
+    ],
+    "originality": "本版简化计算；普通normal-crossing模型",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S20C",
+    "module": "sector",
+    "status": "STD",
+    "title": "小扩张section缺陷公式",
+    "hypotheses": "mI=0，DGLA与线性section",
+    "statement": "曲率由bracket×multiplication defect，H²⊗I完整阻碍lift",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md D2",
+    "depends_on": [],
+    "originality": "经典small-extension显式写法",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S21C",
+    "module": "sector",
+    "status": "COND",
+    "title": "L∞小扩张推广",
+    "hypotheses": "完整L∞与char0收敛/幂零、mI=0",
+    "statement": "高括号乘section高乘法缺陷给曲率",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "source_archive/Generative_Equipment_R28_R35_Saturation_and_NonSplit_Corrections.md",
+    "depends_on": [
+      "S20C"
+    ],
+    "originality": "标准L∞障碍展开",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S22C",
+    "module": "sector",
+    "status": "STD",
+    "title": "pro-p free因子固定表示",
+    "hypotheses": "相应pro-p coproduct与target",
+    "statement": "Hom(G1 amalg G2,Q)分解为两因子",
+    "sources": [
+      "S26"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §20",
+    "depends_on": [],
+    "originality": "coproduct泛性质与Dwyer输入",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S23C",
+    "module": "sector",
+    "status": "DER",
+    "title": "中央amalgam overlap障碍",
+    "hypotheses": "固定barρ、local lifts、核中央及推积适用",
+    "statement": "overlap H¹ quotient类零 iff global lift",
+    "sources": [
+      "S27"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md E",
+    "depends_on": [],
+    "originality": "经典中央粘合显式判据",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S24C",
+    "module": "sector",
+    "status": "COND",
+    "title": "奇球楔loop-SNT",
+    "hypotheses": "指定Hilton–Milnor与MM有限型条件",
+    "statement": "SNT(Ω有限奇球楔)=*的组合证明",
+    "sources": [
+      "S40"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md F2",
+    "depends_on": [
+      "E19"
+    ],
+    "originality": "优先权/发表价值未认证",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S25C",
+    "module": "sector",
+    "status": "OPEN",
+    "title": "ΣCP²-SNT",
+    "hypotheses": "须先核验low Postnikov与global comparison",
+    "statement": "本版不证明SNT(ΩΣCP²)=*",
+    "sources": [
+      "S39",
+      "S41"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §23",
+    "depends_on": [],
+    "originality": "公开/项目状态不作优先权判定",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S26C",
+    "module": "sector",
+    "status": "REPORT",
+    "title": "DHH-R96 PBFT6快照",
+    "hypotheses": "依赖其原稿及完整R95等证明链",
+    "statement": "原报告PBFT6、N1D6≃S4；本次不全链认证",
+    "sources": [
+      "S44"
+    ],
+    "proof_location": "05_SECTORS_AND_APPLICATIONS.md G",
+    "depends_on": [],
+    "originality": "应用来源报告",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S27C",
+    "module": "sector",
+    "status": "OPEN",
+    "title": "完整DHH",
+    "hypotheses": "所有相容finite-stage、对象与mapping接口需证",
+    "statement": "Gra[WA−1]≃Spc未由本包证明",
+    "sources": [
+      "S43",
+      "S44"
+    ],
+    "proof_location": "01_MASTER_THEORY.md §22",
+    "depends_on": [
+      "E01",
+      "E12"
+    ],
+    "originality": "未解决于本包",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S28C",
+    "module": "sector",
+    "status": "RETRACT",
+    "title": "有限mapping-truncation引理",
+    "hypotheses": "旧策略对一般X,Y",
+    "statement": "S1,n0反例；替换为target Postnikov tower",
+    "sources": [
+      "S43"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C21",
+    "depends_on": [],
+    "originality": "反例否定",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S29C",
+    "module": "sector",
+    "status": "RETRACT",
+    "title": "cofiber协变homotopy LES证明法",
+    "hypotheses": "一般cofibration",
+    "statement": "不能当作fibration LES，旧low-π证明需补",
+    "sources": [
+      "S39"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C22",
+    "depends_on": [],
+    "originality": "无效证明方法；不自动否定数值",
+    "proof_assistant_verified": false
+  },
+  {
+    "id": "S30C",
+    "module": "sector",
+    "status": "STD",
+    "title": "正确target截断映射塔",
+    "hypotheses": "X,Y为空间",
+    "statement": "Map(X,Y)≃holim Map(PnX,PnY)，不逐层等于τ≤nMap",
+    "sources": [
+      "S43"
+    ],
+    "proof_location": "03_CORRECTIONS_AND_NO_GO.md C21",
+    "depends_on": [],
+    "originality": "截断伴随+空间Postnikov完备",
+    "proof_assistant_verified": false
+  }
+]

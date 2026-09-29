@@ -1,0 +1,182 @@
+[
+  {
+    "id": "B01",
+    "authors": "Joseph A. Goguen; Rod M. Burstall",
+    "title": "Institutions: Abstract Model Theory for Specification and Programming",
+    "publication": "Journal of the ACM 39 (1992), 95–146",
+    "url": "https://cseweb.ucsd.edu/~goguen/pps/ins.pdf",
+    "use": "签名、句子、模型及满足相容性的标准来源。",
+    "review": "由原稿定位；本次未重做全文审计"
+  },
+  {
+    "id": "B02",
+    "authors": "F. William Lawvere",
+    "title": "Functorial Semantics of Algebraic Theories",
+    "publication": "1963 thesis; Reprints in Theory and Applications of Categories 5 (2004)",
+    "url": "https://tac.mta.ca/tac/reprints/articles/5/tr5.pdf",
+    "use": "自然运算、有限乘积理论及代数语义。",
+    "review": "由原稿定位；本次未重读全文"
+  },
+  {
+    "id": "B03",
+    "authors": "Jonas Frey",
+    "title": "Duality for Clans: an Extension of Gabriel–Ulmer Duality",
+    "publication": "arXiv:2308.11967v2",
+    "url": "https://arxiv.org/html/2308.11967v2",
+    "use": "Gabriel–Ulmer背景与带合适WFS的clan对偶。不能删除clan-algebraic假设。",
+    "review": "本次核对HTML主结论/假设；非逐引理审稿"
+  },
+  {
+    "id": "B04",
+    "authors": "F. William Lawvere",
+    "title": "Adjointness in Foundations",
+    "publication": "1969; Reprints in Theory and Applications of Categories 16 (2006)",
+    "url": "https://tac.mta.ca/tac/reprints/articles/16/tr16.pdf",
+    "use": "逻辑、代入与量词的伴随语义。",
+    "review": "由原稿定位；相关基本伴随证明在本稿给出"
+  },
+  {
+    "id": "B05",
+    "authors": "Richard Garner",
+    "title": "Understanding the small object argument",
+    "publication": "arXiv:0712.0724",
+    "url": "https://arxiv.org/abs/0712.0724",
+    "use": "代数化small-object构造；不保证任意额外保存契约。",
+    "review": "本次核对原作者摘要/定位；不重证全构造"
+  },
+  {
+    "id": "B06",
+    "authors": "John Bourke; Richard Garner",
+    "title": "Algebraic weak factorisation systems I: accessible AWFS",
+    "publication": "arXiv:1412.6559",
+    "url": "https://arxiv.org/abs/1412.6559",
+    "use": "locally presentable环境中的可达代数弱分解与小生成数据。",
+    "review": "本次核对原作者页面及结果范围"
+  },
+  {
+    "id": "B07",
+    "authors": "The Stacks Project",
+    "title": "Lemma 10.98.2 — Taking limits of modules",
+    "publication": "Tag 09B8",
+    "url": "https://stacks.math.columbia.edu/tag/09B8",
+    "use": "相容商模逆系统、有限生成理想与完备性。",
+    "review": "本次核对命题与证明"
+  },
+  {
+    "id": "B08",
+    "authors": "The Stacks Project",
+    "title": "Coherent formal modules — affine existence (Lemma 30.23.1)",
+    "publication": "Tag 087W",
+    "url": "https://stacks.math.columbia.edu/tag/087W",
+    "use": "有限完备模与相容有限模系统的相应仿射等价。",
+    "review": "本次核对准确命题与上下文"
+  },
+  {
+    "id": "B09",
+    "authors": "The Stacks Project",
+    "title": "Perfect complexes; coherent rings; regular rings and global dimension",
+    "publication": "Tags 07LQ, 05CU, 065U",
+    "url": "https://stacks.math.columbia.edu/tag/07LQ",
+    "use": "Perf=thick(R)、相干性、Noether局部正则性/投射维数；另见05CU、065U。",
+    "review": "本次核对三处HTML关键命题"
+  },
+  {
+    "id": "B10",
+    "authors": "C. A. McGibbon; J. M. Møller",
+    "title": "On spaces with the same n-type for all n",
+    "publication": "Topology 31 (1992), 177–201",
+    "url": "https://web.math.ku.dk/~moller/reprints/mcgibbon_moller92.pdf",
+    "use": "SNT、可数群塔ML/lim¹、H0-space有限指数判据、有限rational-H源loop刚性。",
+    "review": "本次读原始PDF并检查相关定理页面；优先权链未穷尽"
+  },
+  {
+    "id": "B11",
+    "authors": "Jacob Lurie",
+    "title": "Higher Topos Theory; Higher Algebra; DAG X: Formal Moduli Problems",
+    "publication": "标准∞范畴、稳定与形式模理论来源",
+    "url": "https://people.math.harvard.edu/~lurie/papers/HTT.pdf",
+    "use": "Ind重建、presentable局部化、Postnikov/稳定语义；HA与DAG X分别用于t结构与char0形式模理论。",
+    "review": "沿原稿引用定位；本次未将全书作为新独立审稿对象"
+  },
+  {
+    "id": "B12",
+    "authors": "Theo Bühler",
+    "title": "Exact Categories",
+    "publication": "arXiv:0811.1480",
+    "url": "https://arxiv.org/abs/0811.1480",
+    "use": "小正合范畴、deflation拓扑、正合嵌入背景。",
+    "review": "本次核对原作者页面；具体输入依旧按正合语义定理限定"
+  },
+  {
+    "id": "B13",
+    "authors": "Jelena Grbić; Abigail Linton",
+    "title": "Non-trivial higher Massey products in moment-angle complexes",
+    "publication": "arXiv:1911.07083; Advances in Mathematics 387 (2021), 107837",
+    "url": "https://arxiv.org/abs/1911.07083",
+    "use": "高阶Massey的标准moment-angle模型与构造；不能充当本项目512000图报告的证据。",
+    "review": "本次核对作者页面与论文定位"
+  },
+  {
+    "id": "B14",
+    "authors": "Emily Riehl; Dominic Verity",
+    "title": "The theory and practice of Reedy categories",
+    "publication": "arXiv:1304.6871",
+    "url": "https://arxiv.org/abs/1304.6871",
+    "use": "Reedy matching与加权极限的标准背景。",
+    "review": "本次核对作者页面"
+  },
+  {
+    "id": "B15",
+    "authors": "Daniel Carranza; Chris Kapulkin",
+    "title": "Cubical setting for discrete homotopy theory, revisited",
+    "publication": "arXiv:2202.03516",
+    "url": "https://arxiv.org/abs/2202.03516",
+    "use": "图离散同伦的cubical背景；不替代本项目完整DHH证明。",
+    "review": "本次核对作者页面；不声称最新所有后续成果已审查"
+  },
+  {
+    "id": "B16",
+    "authors": "G. M. Kelly; V. Schmitt",
+    "title": "Notes on enriched categories with colimits of some class",
+    "publication": "arXiv:math/0509102",
+    "url": "https://arxiv.org/abs/math/0509102",
+    "use": "自由加权完成及Cauchy边界。",
+    "review": "原稿保留引用；本次不重读全文"
+  },
+  {
+    "id": "B17",
+    "authors": "D. Calaque; R. Campos; J. Nuiten",
+    "title": "Moduli problems for operadic algebras",
+    "publication": "arXiv:1912.13495",
+    "url": "https://arxiv.org/abs/1912.13495",
+    "use": "相应Koszul operad条件下的形式模对偶，不能称任意operad无条件成立。",
+    "review": "原稿保留引用；领域应用条件待逐例验证"
+  },
+  {
+    "id": "B18",
+    "authors": "L. Brantner; A. Mathew",
+    "title": "Deformation Theory and Partition Lie Algebras",
+    "publication": "arXiv:1904.07352",
+    "url": "https://arxiv.org/abs/1904.07352",
+    "use": "正特征形式变形不能直接套char0 dg Lie语言。",
+    "review": "原稿保留引用"
+  },
+  {
+    "id": "B19",
+    "authors": "F. William Lawvere",
+    "title": "Metric Spaces, Generalized Logic, and Closed Categories",
+    "publication": "1973; Reprints in Theory and Applications of Categories 1 (2002)",
+    "url": "https://tac.mta.ca/tac/reprints/articles/1/tr1.pdf",
+    "use": "度量丰富化与定量语义。",
+    "review": "原稿保留引用；距离恢复在总稿给直接证明"
+  },
+  {
+    "id": "B20",
+    "authors": "A. K. Bousfield; D. M. Kan",
+    "title": "Homotopy Limits, Completions and Localizations",
+    "publication": "Lecture Notes in Mathematics 304",
+    "url": "https://doi.org/10.1007/BFb0068673",
+    "use": "同伦极限、derived-limit与基点/分支相关的Milnor机制。",
+    "review": "经典背景；本次未全文获取"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "byte integrity, registry types/dependencies, reference/link existence; NOT mathematical proof checking",
+  "source_units": 49,
+  "frozen_members_byte_identical": 8,
+  "claim_records": 101,
+  "claim_status_counts": {
+    "DEF": 10,
+    "OPEN": 5,
+    "STD": 28,
+    "COND": 28,
+    "DER": 25,
+    "RETRACT": 3,
+    "REPORT": 2
+  },
+  "dependency_edges": 51,
+  "dependency_acyclic": true,
+  "unsupported_formal_proof_flags": 0,
+  "bibliography_records": 20,
+  "compiled_documents_checked": 11,
+  "reference_occurrences_checked": 596,
+  "local_links_checked": 108,
+  "unproved_dependencies_promoted": 0
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational/integer; standard library",
+  "tests": {
+    "d_squared_basis": 9,
+    "graded_skew_basis_pairs": 81,
+    "differential_derivation_basis_pairs": 81,
+    "graded_Jacobi_basis_triples": 729,
+    "MC_polynomial_coefficient_identities": 9,
+    "all_squarefree_support_patterns": 20736,
+    "all_monotone_inflationary_B2_maps": 9,
+    "closure_idempotence_checks": 36
+  },
+  "not_verified": [
+    "512000 ordinary Massey classification",
+    "all historical regression counts",
+    "DHH proof chain",
+    "SNT literature originality",
+    "formal proof-assistant verification"
+  ]
+}

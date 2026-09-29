@@ -1,0 +1,6 @@
+PASS: the five original proper defining equations hold.
+PASS: the original full-support curvature pairs to 1 with a graph cycle.
+PASS: noninterval degree-5 cocycles preserve all proper equations.
+PASS: the modified top curvature is exactly zero over F_2.
+Conclusion: 0 belongs to this ORDINARY fourfold Massey product.
+No claim about formality of the whole space is made.
