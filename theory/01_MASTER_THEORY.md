@@ -5,8 +5,8 @@
 **编纂日期：2026-09-29**  
 **性质：C1 是对 Generative Equipment 的编纂、严格化与订正版；它不是新的冻结版本。**  
 **冻结基线：Frozen v1.0，2026-09-23。其冻结核心原文保持不变。**  
-**范围：Generative Equipment 主线及其直接前置，包括 Strict v0.1/v0.2、GE-R1–R35、ENDO-1–6、Horizon 系列，以及 moment-angle、变形、SNT、DHH 应用接口。**  
-**范围边界：未纳入的独立项目不因与 Generative Equipment 有关联而自动成为 C1 的组成部分；DHH 的完整长链也不因局部接口被收录而视为已经整体复核。**
+**范围：Generative Equipment 主线及其直接前置，包括 Strict v0.1/v0.2、GE-R1–R35、ENDO-1–6、Horizon 系列，以及 moment-angle、变形、SNT 等应用接口。**  
+**范围边界：未纳入的独立项目不因与 Generative Equipment 有关联而自动成为 C1 的组成部分。**
 
 C1 是当前的规范阅读与使用入口。历史编号、证明、反例和程序保存在 `source_archive/`；Frozen v1.0 原始材料保存在 `frozen_original/` 与 `evidence/`。引用 `[Sxx]` 指项目原稿，`[Bxx]` 指文献，完整索引见附卷。历史材料用于追溯来源与理论演化，不因归档而自动取得当前定理地位。
 
@@ -78,7 +78,7 @@ C1 的整理原则不是增加术语，而是移除已被反例、类型检查�
 
 ### 1.2 编号去混淆
 
-`GE-R12` 与 `DHH-R12` 是不同文件。引用时统一带项目前缀。ENDO 各版属于版本历史；C1 使用模块与定理 ID 表示当前依赖，不以编号大小表示强度。
+历史版本编号只用于来源追踪；C1 使用模块与定理 ID 表示当前依赖，不以编号大小表示强度。
 
 ### 1.3 原文与当前规范分离
 
@@ -883,7 +883,6 @@ C1 不修改 `01_FROZEN_CORE.md`，也不把“六项工作数据”宣布为已
 | 小扩张 | section 乘法缺陷与曲率的精确公式 | 不说这些标准障碍群由母模型独自发明 |
 | pro-p / Galois | fixed representation 的因子化及中央 overlap mismatch | 不自动下降到共轭商或全部 defining representations 的饱和问题 |
 | SNT | finite-visibility 的有限指数稳定化引理与奇球楔综合推论 | 不宣称已确认文献首创或解决了 CP2 case |
-| DHH | general comparison 接口及局部工具线的报告状态 | 不由 PBFT 有限范围、抽象 pullback 重述或错误映射截断推出 DHH |
 
 详细定理、证明和状态在 `05_SECTORS_AND_APPLICATIONS.md` 与 `02_THEOREM_LEDGER.md`。
 
@@ -907,74 +906,7 @@ C1 不修改 `01_FROZEN_CORE.md`，也不把“六项工作数据”宣布为已
 
 ---
 
-## 22. DHH：准确的接口与撤回的错误路线
-
-目标：
-
-\[
-\mathcal C=\mathsf{Gra}[W_A^{-1}]
-\stackrel?\simeq\mathcal S.
-\]
-
-若已独立构造与截断**相干兼容**的有限层等价
-
-\[
-E_n:\mathcal C_n\simeq\mathcal S_{\le n},
-\]
-
-则其极限给形式目标 \(\lim_n\mathcal C_n\simeq\mathcal S\)。实际比较仍需本质满与全忠实。
-
-### 明确撤回：mapping truncation 建议
-
-一般没有
-
-\[
-\tau_{\le n}\operatorname{Map}(X,Y)
-\simeq
-\operatorname{Map}(\tau_{\le n}X,\tau_{\le n}Y).
-\]
-
-取 \(n=0\)、\(X=Y=S^1\)：左侧连通分支按映射度数是 \(\mathbb Z\)，右侧为一点。
-
-空间里正确的是
-
-\[
-\operatorname{Map}(\tau_{\le n}X,\tau_{\le n}Y)
-\simeq\operatorname{Map}(X,\tau_{\le n}Y),
-\]
-
-及
-
-\[
-\operatorname{Map}(X,Y)
-\simeq\operatorname*{holim}_n
-\operatorname{Map}(X,\tau_{\le n}Y).
-\]
-
-**每个映射空间本来就是空间，因此其自身 Postnikov 完备不是 graph-localization 需要另找的特殊性质。难点在于证明 graph-localized 映射空间与正确目标塔的比较。**
-
-新的 DHH 全忠实目标仍然是
-
-\[
-\operatorname{Map}_{\mathcal C}(G,H)
-\longrightarrow
-\operatorname*{holim}_n
-\operatorname{Map}_{\mathcal C_n}(q_nG,q_nH),
-\]
-
-但不能经由上面的错误截断公式证明。
-
-### 局部工具地位
-
-归档的 DHH-R96 报告 \(\mathrm{PBFT}_6\) 及 \(N_1D_6\simeq S^4\)，并把下一项列为 \(H_7(N_1A_2^6,B_6)\)。本稿只记录这一报告，不重新认证它的全部前置链。[S44]
-
-PBFT 主要提供局部实现／切除工具；从它到同时对象实现与全忠实，需要写出具体桥接定理。不能断言它只服务对象侧，也不能断言把 PBFT 做到任意有限范围就自动获得 DHH。
-
-“只有本质满与全忠实两项”是范畴等价判据，不意味着每一项内部只有一个障碍；其内部结构必须由具体比较与证明分别分析。
-
----
-
-## 23. SNT：带粘合资料的塔与只有层类型的列表
+## 22. SNT：带粘合资料的塔与只有层类型的列表
 
 在空间范畴中，完整相干 Postnikov 塔可重建空间。但
 
@@ -994,7 +926,7 @@ P_nX\simeq P_nY\quad\forall n
 
 # 第七编　识别地图、最小研发闭环与成熟度
 
-## 24. 三类“完成”不能再混称
+## 23. 三类“完成”不能再混称
 
 **表达完成：**已把某种问题写成精确对象、纤维或拉回。
 
@@ -1002,11 +934,11 @@ P_nX\simeq P_nY\quad\forall n
 
 **领域问题完成：**还证明了目标对象实际满足全部前提。
 
-Horizon 相对拉回主要完成第一类，并连接若干第二类引擎。DHH 与一般 CP2-SNT 的第三类完成尚无本稿证明。将第一类直接称作“THEORETICALLY CLOSED”会掩盖真正任务，今后不用这种无分层状态词。
+Horizon 相对拉回主要完成第一类，并连接若干第二类引擎。一般 CP2-SNT 的第三类完成尚无本稿证明。将第一类直接称作“THEORETICALLY CLOSED”会掩盖真正任务，今后不用这种无分层状态词。
 
 ---
 
-## 25. 研究账本中的保留核心与待解接口
+## 24. 研究账本中的保留核心与待解接口
 
 ### 保留的稳定骨架
 
@@ -1028,7 +960,7 @@ Yoneda 与表示性；有限 Reedy 匹配；在正确实际比较前提下的 to
 
 ---
 
-## 26. 推荐的验证闭环
+## 25. 推荐的验证闭环
 
 后续研究与应用验证采用如下可核验链：
 
@@ -1047,7 +979,7 @@ Yoneda 与表示性；有限 Reedy 匹配；在正确实际比较前提下的 to
 
 ---
 
-## 27. 总结：精炼后的理论与没有得到的承诺
+## 26. 总结：精炼后的理论与没有得到的承诺
 
 现在可以用一句话描述本项目：
 
@@ -1055,7 +987,7 @@ Yoneda 与表示性；有限 Reedy 匹配；在正确实际比较前提下的 to
 
 它的可信数学内容来自明确的数据、比较、泛性质、障碍计算和反例，而不是由“生成性”这一名称保证。
 
-目前没有建立：无条件唯一的全部数学语言、通用有效 solver、自动重要性排序、已认证的新基础理论、完整 DHH 或完整 two-cell loop-SNT 分类。
+目前没有建立：无条件唯一的全部数学语言、通用有效 solver、自动重要性排序、已认证的新基础理论或完整 two-cell loop-SNT 分类。
 
 目前确有：可用的严格空间值实现、有限 matching 与 horizon 的正确接口、若干领域识别判据、完全写出的反例与小型非线性例子，以及一套能继续接受反例检验的研究组织方式。
 
