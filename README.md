@@ -1,52 +1,58 @@
 # Generative Equipment / 数学内生生成性
 
-Generative Equipment 是一个开放的数学研究项目。
+Generative Equipment 是一个开放的数学研究项目，研究：**数学结构自身如何产生问题、实现条件、障碍、修补与新的结构？**
 
-它研究一个核心问题：
+一个主要目标是帮助 AI 更可靠、更有创造性地思考数学。项目把表示与目标、形式与实际、有限与整体、逐点与相干、已证与待证的区别写成明确的数学接口。对 AI 数学能力的净提升仍需要实证评估。
 
-> 数学结构自身如何产生问题、实现条件、障碍、修补与新的结构？
+## 快速入口
 
-本项目当前特别关注一个实际方向：
+| 想了解什么 | 从这里开始 |
+|---|---|
+| 项目目的与 AI 数学方向 | [AI_MATH.md](AI_MATH.md) |
+| 当前公开理论与阅读路线 | [理论导航](theory/README.md) |
+| 完整理论 | [C1 总稿](theory/01_MASTER_THEORY.md) |
+| 哪些结论可以使用、需要什么前提 | [定理账本](theory/02_THEOREM_LEDGER.md)与[订正表](theory/03_CORRECTIONS_AND_NO_GO.md) |
+| 核心原始定义 | [Frozen v1.0 核心](theory/frozen_original/01_FROZEN_CORE.md) |
+| 本仓库实际验证范围 | [仓库核对记录](docs/REPOSITORY_AUDIT_2026-10-01.md) |
 
-> **能否帮助 AI 更可靠、更有创造性地思考数学。**
+## 版本与阅读优先级
 
-这里的目标不是让 AI 只做更多计算，而是帮助它更好地区分：
+| 层次 | 版本 | 地位与入口 |
+|---|---|---|
+| 冻结核心 | Frozen v1.0 · 2026-09-23 | [原始核心](theory/frozen_original/01_FROZEN_CORE.md)保持原文；[原始包](theory/evidence/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip)保留 |
+| 当前公开综合理论 | C1 · 2026-09-29 | [编纂入口](theory/00_README.md)：严格实现、派生结果、条件、订正和应用边界 |
+| 历史材料 | Strict、GE-R、ENDO、Horizon 等 | [来源索引](theory/07_SOURCE_INDEX_AND_VERSION_MAP.md)负责追溯；归档不代表全部旧结论仍有效 |
 
-- 一个表示失败，与问题本身无解；
-- 形式上相容，与真正可实现；
-- 局部或有限阶段成立，与整体或无限阶段成立；
-- 单点构造，与参数化、相干构造；
-- 已证明、条件性结果、开放问题与已撤回结论。
+Frozen v1.0 的核心是基础规范；派生结论使用 C1 的当前条件与订正。C1 不构成新的 Frozen 版本，也不静默改写冻结核心。
 
-## 从哪里开始
-
-- 想先了解项目目的：阅读 [`AI_MATH.md`](AI_MATH.md)
-- 想直接阅读完整数学理论：进入 [`theory/`](theory/)
-
-## 理论文件
-
-`theory/` 中保存的是 **Generative Equipment Consolidated 2026-09-29 / C1** 的完整原始内容。
-
-开源整理没有修改这些理论文件的内容。原包中的主理论、定理账本、订正、领域应用、Frozen v1.0、source archive、registry、evidence 与验证脚本均保留。
-
-建议严格阅读顺序：
-
-1. `theory/00_README.md`
-2. `theory/01_MASTER_THEORY.md`
-3. `theory/02_THEOREM_LEDGER.md`
-4. `theory/03_CORRECTIONS_AND_NO_GO.md`
-5. `theory/05_SECTORS_AND_APPLICATIONS.md`
+本仓库的 C1 公开整理版保留了源档案、Frozen 原始文件、登记数据和验证脚本；部分编纂正文已有公开编辑，合订文件也曾移除。因此不能把当前目录称为原 C1 压缩包的完整逐字节副本。原包校验清单仍保留，具体差异见[仓库核对记录](docs/REPOSITORY_AUDIT_2026-10-01.md)。
 
 ## 数学状态
 
-本项目是持续发展的研究项目，而不是已经完成的通用数学创造算法。
+理论区分七种状态：
 
-理论内部使用以下状态区分不同结论：
+- **DEF**：定义或数据契约
+- **STD**：经典定理或标准推论
+- **DER**：文稿给出可核对的派生证明，文献首创性另判
+- **COND**：条件性结果，应用时必须验证前提
+- **REPORT**：归档证据尚不足以完成独立核验的历史报告
+- **OPEN**：待证接口或研究目标
+- **RETRACT**：已撤回的结论或无效外推
 
-`DEF / STD / DER / COND / REPORT / OPEN / RETRACT`
+详细使用规则见[C1 总稿 §1](theory/01_MASTER_THEORY.md)。文件完整性和有限回归通过，不等于全部数学证明已获认证；本项目也未建立通用数学创造算法或普遍的 AI 能力增益。
 
-具体含义以 `theory/01_MASTER_THEORY.md` 和 `theory/02_THEOREM_LEDGER.md` 为准。
+## 复核
+
+在仓库根目录运行，使用 Python 3.10 或更新版本，无需额外 Python 库：
+
+```sh
+python3 theory/verify_package.py
+python3 theory/source_archive/verify_r22_counterexample.py
+python3 theory/evidence/verify_refinements.py
+```
+
+三项分别检查归档与登记一致性、一个指定的普通四重 Massey 反例、有限 DGLA 与闭包回归。第三项会重写其结果文件。原 C1 校验清单的已知差异、最新复核计数和未验证事项见[核对记录](docs/REPOSITORY_AUDIT_2026-10-01.md)。
 
 ## License
 
-本仓库采用 MIT License。详见 [`LICENSE`](LICENSE)。
+本仓库采用 [MIT License](LICENSE)。
