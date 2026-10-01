@@ -39,18 +39,6 @@ C2 文稿包含 38 个纸面审查点。发布时重跑通过 19 组有限数学
 
 C1 公开整理版已有历史编辑，且合订文件曾被移除，并非原 C1 压缩包的完整逐字节副本；这些既有差异见[C1 核对记录](docs/REPOSITORY_AUDIT_2026-10-01.md)。
 
-## 复核
-
-在仓库根目录运行，使用 Python 3.10 或更新版本，无需额外 Python 库：
-
-```sh
-sha256sum -c docs/C2_SOURCE_SHA256SUMS.txt
-sha256sum -c docs/C1_FROZEN_SHA256SUMS.txt
-python3 theory/C1/verify_package.py --output /tmp/ge-c1-integrity.json
-python3 theory/C2/tests/verify_finite.py --output /tmp/ge-c2-results.json
-```
-
-`--output` 把新结果写到独立文件，保留归档中的历史输出。更多 C1 复核路径及原清单的已知差异见[目录整理记录](docs/DIRECTORY_REORGANIZATION_2026-10-01.md)。
 
 ## License
 
