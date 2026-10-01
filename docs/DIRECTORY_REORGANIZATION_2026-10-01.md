@@ -1,4 +1,20 @@
-# C1 目录整理记录
+# 目录整理记录
+
+## 当前布局：Frozen v1.0 独立目录
+
+按后续整理要求，Frozen 的 8 份原文从 C1 中移出，现与 C1、C2 并列：`theory/README.md`、`theory/Frozen-v1.0/`、`theory/C1/`、`theory/C2/`。Frozen 原始 ZIP 移到 `docs/archives/`。
+
+Frozen 8 文件、Frozen ZIP、C2 全目录、其他原始 ZIP 与 LICENSE 字节不变。C1 校验器仅改两处路径：Frozen ZIP 从包内 evidence 改为仓库 docs/archives，展开文件从 frozen_original 改为同级 Frozen-v1.0。来源登记仅改 4 条 path，来源摘要与字节数不变；来源索引仅改 4 个链接。原校验器和原登记可在[拆分前提交](https://github.com/longx-unbound/Generative-Equipment/commit/a1b6ae068de594b12dbafaa1fc9ba404484b8b50)查看。
+
+当前文件校验命令为 `sha256sum -c docs/C1_FROZEN_SHA256SUMS.txt`；C1 原校验器仍使用 `python3 theory/C1/verify_package.py --output /tmp/ge-c1-integrity.json`，能直接检查新目录。C2 命令与校验清单不变。
+
+原公开快照清单原样保存到 [archives/](archives/C1_PUBLIC_SNAPSHOT_2026-10-01.sha256)，原 C1 包清单也不重写；两份旧清单记录历史字节与路径，不能直接用于当前目录。本次新增 [C1 与 Frozen 当前清单](C1_FROZEN_SHA256SUMS.txt)，明确区分迁移后的包装文件与原历史摘要。
+
+下文是此前第一次归档的记录，文件数、目录、命令与通过情况均指当时快照。
+
+---
+
+## 首次 C1 整包归档（历史记录）
 
 日期：2026-10-01。迁移基准：[9278f7194256ff63befc667395a69ffcc87d9226](https://github.com/longx-unbound/Generative-Equipment/commit/9278f7194256ff63befc667395a69ffcc87d9226)。本次只整理目录、导航和校验路径，不增加数学结论。
 
@@ -20,7 +36,7 @@
 - `theory/C2/` 的 8 个文件及其路径完全不变；C2 ZIP 只改变存放位置
 - Frozen 的 8 份原文与原始压缩包不变；核心 SHA-256 仍为 `753f2cf7c6da8aae50cf4ea56d5807bae2747ce509c1d2d0522be2189ba6086d`
 - LICENSE 不变，提交历史保留
-- [C1 公开快照清单](C1_PUBLIC_SNAPSHOT_2026-10-01.sha256)仅给 78 个路径增加 `C1/` 前缀，摘要值不变；[C2 清单](C2_SOURCE_SHA256SUMS.txt)仅调整 ZIP 路径
+- [C1 公开快照清单](archives/C1_PUBLIC_SNAPSHOT_2026-10-01.sha256)仅给 78 个路径增加 `C1/` 前缀，摘要值不变；[C2 清单](C2_SOURCE_SHA256SUMS.txt)仅调整 ZIP 路径
 - 原 C1 包清单 `theory/C1/SHA256SUMS.txt`、登记结果和 C2 原运行结果保持原样，不用本次输出覆盖
 
 [旧 C1 核对记录](REPOSITORY_AUDIT_2026-10-01.md)与[C2 发布记录](C2_PUBLICATION_2026-10-01.md)中的“保留原路径”等表述描述各自历史操作，仍按文中基准提交理解。本次为随后进行的物理迁移；旧记录仅增加迁移提示并修正可点击链接的目标。

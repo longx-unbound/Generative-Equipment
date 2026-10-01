@@ -1,6 +1,6 @@
 # C2 公开发布核对
 
-> 目录迁移说明：本记录描述下文所列历史提交及当时路径。随后 C1 整包移入 `theory/C1/`，C2 原始 ZIP 移入 `docs/archives/`；正文中的历史命令与事实保留，当前运行路径及清单说明见[目录整理记录](DIRECTORY_REORGANIZATION_2026-10-01.md)。
+> 目录迁移说明：本记录描述下文所列历史提交及当时路径。随后 C1 归入 `theory/C1/`，Frozen 原文独立到 `theory/Frozen-v1.0/`，原始 ZIP 移入 `docs/archives/`；正文中的历史命令与事实保留，当前运行路径及清单说明见[目录整理记录](DIRECTORY_REORGANIZATION_2026-10-01.md)。
 
 日期：2026-10-01。对象：`longx-unbound/Generative-Equipment` 的 C2 公开更新。
 
@@ -26,7 +26,7 @@
 - C2 中的 Frozen 核心为 9,391 字节，SHA-256 为 `753f2cf7c6da8aae50cf4ea56d5807bae2747ce509c1d2d0522be2189ba6086d`，与既有 Frozen 核心相同
 - `source_integrity.json` 所列 C1 原始压缩包及原 C1 主文摘要已对源材料核对一致；它们指向原始版本，不能用来宣称当前公开 C1 编辑稿逐字节等同于原包
 
-C1 公开编辑的既有差异仍由[C1 仓库核对记录](REPOSITORY_AUDIT_2026-10-01.md)披露。[C1 公开快照清单](C1_PUBLIC_SNAPSHOT_2026-10-01.sha256)和 `theory/SHA256SUMS.txt` 均不重写，也不扩充为 C2 清单。
+C1 公开编辑的既有差异仍由[C1 仓库核对记录](REPOSITORY_AUDIT_2026-10-01.md)披露。[C1 公开快照清单](archives/C1_PUBLIC_SNAPSHOT_2026-10-01.sha256)和 `theory/SHA256SUMS.txt` 均不重写，也不扩充为 C2 清单。
 
 ## 3. 本次实际复核
 

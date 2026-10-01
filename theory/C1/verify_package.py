@@ -36,10 +36,10 @@ def main():
         require(len(raw)==s['bytes'],f'Source size changed: {s["id"]}')
         require(sha(raw)==s['sha256'],f'Source bytes changed: {s["id"]}')
     frozen_count=0
-    with zipfile.ZipFile(ROOT/'evidence/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip') as z:
+    with zipfile.ZipFile(ROOT.parent.parent/'docs/archives/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip') as z:
         for entry in z.infolist():
             if entry.is_dir():continue
-            p=ROOT/'frozen_original'/Path(entry.filename).name
+            p=ROOT.parent/'Frozen-v1.0'/Path(entry.filename).name
             require(p.is_file(),f'Missing frozen archive member: {entry.filename}')
             require(z.read(entry)==p.read_bytes(),f'Frozen bytes changed: {p.name}')
             frozen_count+=1

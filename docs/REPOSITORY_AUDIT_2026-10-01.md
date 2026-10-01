@@ -1,6 +1,6 @@
 # 公开仓库核对记录
 
-> 目录迁移说明：本记录描述下文所列历史提交及当时路径。随后 C1 整包移入 `theory/C1/`，C2 原始 ZIP 移入 `docs/archives/`；正文中的历史命令与事实保留，当前运行路径及清单说明见[目录整理记录](DIRECTORY_REORGANIZATION_2026-10-01.md)。
+> 目录迁移说明：本记录描述下文所列历史提交及当时路径。随后 C1 归入 `theory/C1/`，Frozen 原文独立到 `theory/Frozen-v1.0/`，原始 ZIP 移入 `docs/archives/`；正文中的历史命令与事实保留，当前运行路径及清单说明见[目录整理记录](DIRECTORY_REORGANIZATION_2026-10-01.md)。
 
 日期：2026-10-01。对象：`longx-unbound/Generative-Equipment` 的公开 C1 文件快照。
 
@@ -55,7 +55,7 @@
 
 ## 3. 当前公开快照的附加字节清单
 
-[`C1_PUBLIC_SNAPSHOT_2026-10-01.sha256`](C1_PUBLIC_SNAPSHOT_2026-10-01.sha256) 记录基准提交中 `theory/` 既有 78 个文件的 SHA-256。它用于确认这批公开文件在本次导航整理中未变，不替换原 C1 包清单，也不作数学真值认证。
+[`C1_PUBLIC_SNAPSHOT_2026-10-01.sha256`](archives/C1_PUBLIC_SNAPSHOT_2026-10-01.sha256) 记录基准提交中 `theory/` 既有 78 个文件的 SHA-256。它用于确认这批公开文件在本次导航整理中未变，不替换原 C1 包清单，也不作数学真值认证。
 
 在仓库根目录执行：
 

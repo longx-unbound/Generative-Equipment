@@ -27,7 +27,7 @@
 
 ### S00 · 冻结核心原文
 
-文件：[01_FROZEN_CORE.md](frozen_original/01_FROZEN_CORE.md)。
+文件：[01_FROZEN_CORE.md](../Frozen-v1.0/01_FROZEN_CORE.md)。
 
 收录状态：原文完整保留；编纂版不更改。
 
@@ -37,7 +37,7 @@ SHA-256：`753f2cf7c6da8aae50cf4ea56d5807bae2747ce509c1d2d0522be2189ba6086d`。
 
 ### S01 · 冻结时派生结果
 
-文件：[02_DERIVED_THEORY.md](frozen_original/02_DERIVED_THEORY.md)。
+文件：[02_DERIVED_THEORY.md](../Frozen-v1.0/02_DERIVED_THEORY.md)。
 
 收录状态：原文保留；按总稿的精确条件使用。
 
@@ -47,7 +47,7 @@ SHA-256：`ea62123e8e433085ac86c4679acff40082c762c526d6a0c188d98581bedfeac9`。
 
 ### S02 · 冻结时禁用推理
 
-文件：[03_NO_GO_AND_RETRACTIONS.md](frozen_original/03_NO_GO_AND_RETRACTIONS.md)。
+文件：[03_NO_GO_AND_RETRACTIONS.md](../Frozen-v1.0/03_NO_GO_AND_RETRACTIONS.md)。
 
 收录状态：保留；一般绝对唯一性 no-go 按 ENDO-5 收窄。
 
@@ -57,7 +57,7 @@ SHA-256：`6472f5a13a9e3f0e0c9045c950792a4f677d2f77457491ab46268ffdfaef7e5e`。
 
 ### S03 · 研究治理规则
 
-文件：[05_RESEARCH_PROTOCOL.md](frozen_original/05_RESEARCH_PROTOCOL.md)。
+文件：[05_RESEARCH_PROTOCOL.md](../Frozen-v1.0/05_RESEARCH_PROTOCOL.md)。
 
 收录状态：保留；非数学存在性公理。
 

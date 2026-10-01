@@ -6,7 +6,7 @@
 |---|---|---|
 | **C2** | [说明](C2/00_README.md) · [数学理论](C2/01_C2_THEORY.md) · [评估与测试](C2/02_EVALUATION_AND_TESTS.md) · [AI 协议](C2/03_AI_CREATIVITY_PROTOCOL.md) | 当前阅读入口，六个派生模块及其限定证明 |
 | **C1** | [归档导航](C1/README.md) · [定理账本](C1/02_THEOREM_LEDGER.md) · [订正表](C1/03_CORRECTIONS_AND_NO_GO.md) | 继承的严格工作层、领域附卷与历史来源 |
-| **Frozen v1.0** | [原始核心](C1/frozen_original/01_FROZEN_CORE.md) · [版本清单](C1/frozen_original/00_MANIFEST.md) · [原始 ZIP](C1/evidence/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip) | 冻结基础规范，原文保存在 C1 完整归档中 |
+| **Frozen v1.0** | [原始核心](Frozen-v1.0/01_FROZEN_CORE.md) · [版本清单](Frozen-v1.0/00_MANIFEST.md) · [原始 ZIP](../docs/archives/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip) | 独立保存的冻结基础规范与原始文件 |
 
 ## 阅读规则
 

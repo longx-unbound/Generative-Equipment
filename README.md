@@ -9,7 +9,7 @@ Generative Equipment 是一个开放的数学研究项目，研究：**数学结
 - **当前理论 C2**：[版本说明](theory/C2/00_README.md) · [数学理论](theory/C2/01_C2_THEORY.md) · [严格评估与测试](theory/C2/02_EVALUATION_AND_TESTS.md)
 - **AI 数学方向**：[项目目的](AI_MATH.md) · [C2 AI 数学创造协议](theory/C2/03_AI_CREATIVITY_PROTOCOL.md)
 - **C1 归档**：[归档导航](theory/C1/README.md) · [定理账本](theory/C1/02_THEOREM_LEDGER.md) · [订正表](theory/C1/03_CORRECTIONS_AND_NO_GO.md)
-- **Frozen v1.0**：[原始核心](theory/C1/frozen_original/01_FROZEN_CORE.md) · [原始包](theory/C1/evidence/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip)
+- **Frozen v1.0**：[原始核心](theory/Frozen-v1.0/01_FROZEN_CORE.md) · [原始包](docs/archives/Generative_Equipment_Frozen_v1_0_ORIGINAL.zip)
 
 完整版本关系见[理论版本索引](theory/README.md)。C2 是当前派生工作版本，继承 C1 的严格工作层与领域附卷，并保留 Frozen v1.0 核心；使用领域结论时，仍须遵守 C1 的前提、证据状态与订正。
 
@@ -23,12 +23,13 @@ Generative-Equipment/
 ├── theory/
 │   ├── README.md      版本索引
 │   ├── C2/            当前理论，8 个原包文件
-│   └── C1/            C1 正文、Frozen 原文、来源与证据
+│   ├── C1/            C1 正文、来源与证据
+│   └── Frozen-v1.0/   独立的 Frozen 原始版本
 └── docs/              发布核对、校验清单与迁移记录
-    └── archives/      C2 原始 ZIP
+    └── archives/      Frozen、C2 原始 ZIP 与历史清单
 ```
 
-C1 的 78 个既有文件已整体归入 `theory/C1/`，内部结构与文件字节保持不变。C2 的 8 个文件与[C2 原始 ZIP](docs/archives/Generative_Equipment_C2_2026-09-30.zip)逐字节一致。整理范围和路径变化见[目录整理记录](docs/DIRECTORY_REORGANIZATION_2026-10-01.md)。
+C1 材料集中在 `theory/C1/`，Frozen v1.0 的 8 份原文独立放在同级 `theory/Frozen-v1.0/`。数学正文与原档字节保留，仅调整必要的导航与校验路径。C2 的 8 个文件与[C2 原始 ZIP](docs/archives/Generative_Equipment_C2_2026-09-30.zip)逐字节一致。整理范围和路径变化见[目录整理记录](docs/DIRECTORY_REORGANIZATION_2026-10-01.md)。
 
 ## 数学与证据状态
 
@@ -44,7 +45,7 @@ C1 公开整理版已有历史编辑，且合订文件曾被移除，并非原 C
 
 ```sh
 sha256sum -c docs/C2_SOURCE_SHA256SUMS.txt
-sha256sum -c docs/C1_PUBLIC_SNAPSHOT_2026-10-01.sha256
+sha256sum -c docs/C1_FROZEN_SHA256SUMS.txt
 python3 theory/C1/verify_package.py --output /tmp/ge-c1-integrity.json
 python3 theory/C2/tests/verify_finite.py --output /tmp/ge-c2-results.json
 ```

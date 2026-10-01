@@ -2,7 +2,7 @@
   {
     "id": "S00",
     "file": "01_FROZEN_CORE.md",
-    "path": "frozen_original/01_FROZEN_CORE.md",
+    "path": "../Frozen-v1.0/01_FROZEN_CORE.md",
     "bytes": 9391,
     "sha256": "753f2cf7c6da8aae50cf4ea56d5807bae2747ce509c1d2d0522be2189ba6086d",
     "role": "冻结核心原文",
@@ -11,7 +11,7 @@
   {
     "id": "S01",
     "file": "02_DERIVED_THEORY.md",
-    "path": "frozen_original/02_DERIVED_THEORY.md",
+    "path": "../Frozen-v1.0/02_DERIVED_THEORY.md",
     "bytes": 8582,
     "sha256": "ea62123e8e433085ac86c4679acff40082c762c526d6a0c188d98581bedfeac9",
     "role": "冻结时派生结果",
@@ -20,7 +20,7 @@
   {
     "id": "S02",
     "file": "03_NO_GO_AND_RETRACTIONS.md",
-    "path": "frozen_original/03_NO_GO_AND_RETRACTIONS.md",
+    "path": "../Frozen-v1.0/03_NO_GO_AND_RETRACTIONS.md",
     "bytes": 7017,
     "sha256": "6472f5a13a9e3f0e0c9045c950792a4f677d2f77457491ab46268ffdfaef7e5e",
     "role": "冻结时禁用推理",
@@ -29,7 +29,7 @@
   {
     "id": "S03",
     "file": "05_RESEARCH_PROTOCOL.md",
-    "path": "frozen_original/05_RESEARCH_PROTOCOL.md",
+    "path": "../Frozen-v1.0/05_RESEARCH_PROTOCOL.md",
     "bytes": 3624,
     "sha256": "1d7f1cf94ca9e919ea5d642357256552bb65ef00f3d5df6c24e40b0ae4ef2722",
     "role": "研究治理规则",
