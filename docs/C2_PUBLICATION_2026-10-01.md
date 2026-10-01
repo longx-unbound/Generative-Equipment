@@ -1,5 +1,7 @@
 # C2 公开发布核对
 
+> 目录迁移说明：本记录描述下文所列历史提交及当时路径。随后 C1 整包移入 `theory/C1/`，C2 原始 ZIP 移入 `docs/archives/`；正文中的历史命令与事实保留，当前运行路径及清单说明见[目录整理记录](DIRECTORY_REORGANIZATION_2026-10-01.md)。
+
 日期：2026-10-01。对象：`longx-unbound/Generative-Equipment` 的 C2 公开更新。
 
 本次以公开提交 [b93dae237aeab5cf6b393f2322f83bd5dcb3835f](https://github.com/longx-unbound/Generative-Equipment/commit/b93dae237aeab5cf6b393f2322f83bd5dcb3835f) 为基准，发布已有的 C2 包并整理阅读入口；没有增加数学结论或修改验证器。
@@ -9,7 +11,7 @@
 | 位置 | 用途 |
 |---|---|
 | [`theory/C2/`](../theory/C2/) | C2 原包的全部 8 个文件：说明、主文、评估、AI 协议、Frozen 核心、源摘要、验证器与原运行结果 |
-| [`theory/evidence/Generative_Equipment_C2_2026-09-30.zip`](../theory/evidence/Generative_Equipment_C2_2026-09-30.zip) | C2 原始压缩包，保留下载与字节核对依据 |
+| [`theory/evidence/Generative_Equipment_C2_2026-09-30.zip`](archives/Generative_Equipment_C2_2026-09-30.zip) | C2 原始压缩包，保留下载与字节核对依据 |
 | [`C2_SOURCE_SHA256SUMS.txt`](C2_SOURCE_SHA256SUMS.txt) | 上述 8 文件及原始 ZIP 的 SHA-256；路径相对仓库根目录 |
 | [`C2_FINITE_REGRESSION_2026-10-01.json`](C2_FINITE_REGRESSION_2026-10-01.json) | 本次重新运行的输出，独立于包内原记录保存 |
 

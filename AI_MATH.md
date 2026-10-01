@@ -80,4 +80,4 @@ C:\mathcal A\to\mathcal F,
 - 它能替代具体领域的数学工具；
 - 它是一个通用 solver。
 
-公开理论的版本关系和阅读路线见[理论导航](theory/README.md)。C2 的结论范围见[严格评估和测试](theory/C2/02_EVALUATION_AND_TESTS.md)，继承的领域结论仍须查阅[C1 定理账本](theory/02_THEOREM_LEDGER.md)与[订正表](theory/03_CORRECTIONS_AND_NO_GO.md)。本次实际复核范围见[C2 发布核对](docs/C2_PUBLICATION_2026-10-01.md)。
+公开理论的版本关系和阅读路线见[理论导航](theory/README.md)。C2 的结论范围见[严格评估和测试](theory/C2/02_EVALUATION_AND_TESTS.md)，继承的领域结论仍须查阅[C1 定理账本](theory/C1/02_THEOREM_LEDGER.md)与[订正表](theory/C1/03_CORRECTIONS_AND_NO_GO.md)。本次实际复核范围见[C2 发布核对](docs/C2_PUBLICATION_2026-10-01.md)。

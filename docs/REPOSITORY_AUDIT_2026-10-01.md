@@ -1,5 +1,7 @@
 # 公开仓库核对记录
 
+> 目录迁移说明：本记录描述下文所列历史提交及当时路径。随后 C1 整包移入 `theory/C1/`，C2 原始 ZIP 移入 `docs/archives/`；正文中的历史命令与事实保留，当前运行路径及清单说明见[目录整理记录](DIRECTORY_REORGANIZATION_2026-10-01.md)。
+
 日期：2026-10-01。对象：`longx-unbound/Generative-Equipment` 的公开 C1 文件快照。
 
 基准提交：[bf3387918979b54036cec1524f2d1dc1836f562a](https://github.com/longx-unbound/Generative-Equipment/commit/bf3387918979b54036cec1524f2d1dc1836f562a)。本次是文件、导航与既有回归核对，没有新增数学研究，也没有重新认证全部历史证明。
@@ -70,4 +72,4 @@ sha256sum -c docs/C1_PUBLIC_SNAPSHOT_2026-10-01.sha256
 - 没有进行证明助理形式化或 AI 能力的同预算随机对照
 - 截至核对时，仓库无 GitHub Actions 工作流文件及运行记录；上述结果来自本次直接执行，不称为 CI 通过
 
-项目内既有结论仍按[定理账本](../theory/02_THEOREM_LEDGER.md)、[订正表](../theory/03_CORRECTIONS_AND_NO_GO.md)与各自条件使用。文件校验通过、有限回归通过和一般数学命题成立是不同的判断。
+项目内既有结论仍按[定理账本](../theory/C1/02_THEOREM_LEDGER.md)、[订正表](../theory/C1/03_CORRECTIONS_AND_NO_GO.md)与各自条件使用。文件校验通过、有限回归通过和一般数学命题成立是不同的判断。
