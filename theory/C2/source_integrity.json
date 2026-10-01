@@ -1,0 +1,9 @@
+{
+  "source_package": "Generative_Equipment_Consolidated_2026-09-29.zip",
+  "source_package_sha256": "2d3d3bf1b38a3e80c783fbc8521fe3d7868c016f523e8ed315585dc92cff126b",
+  "frozen_core_member": "Generative_Equipment_Consolidated_2026-09-29/frozen_original/01_FROZEN_CORE.md",
+  "frozen_core_sha256": "753f2cf7c6da8aae50cf4ea56d5807bae2747ce509c1d2d0522be2189ba6086d",
+  "frozen_core_bytes": 9391,
+  "C1_main_sha256": "048c000b178165143712efc2c5733ae732c7c6f48ef499ac1ed921a9c43b2820",
+  "C2_core_changed": false
+}

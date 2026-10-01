@@ -65,8 +65,13 @@ C:\mathcal A\to\mathcal F,
 
 最终目标是提升 AI 的数学创造能力，让 AI 能独立创造出不平凡的数学。
 
+## 4. C2 的使用入口
 
-## 4. 当前边界
+[C2 数学理论](theory/C2/01_C2_THEORY.md)把丰富化、相对残差、实现尺度、信息压缩、量词提升和问题选择组织为六个可选模块。具体操作见[AI 数学创造协议](theory/C2/03_AI_CREATIVITY_PROTOCOL.md)：先明确目标和预算，再选择相关模块、构造候选、寻找破坏例并验证结果。
+
+协议还给出常规推理、普通证明检查表、C1、C2 四组同预算对照的设计。该对照尚未执行；38 个纸面审查点、19 组有限数学回归和 1 组核心字节核对不能替代它。能直接解决的问题无需调用全部模块。
+
+## 5. 当前边界
 
 公开材料包含数学框架、显式反例、领域实例和有限回归；这些材料本身尚未证明：
 
@@ -75,4 +80,4 @@ C:\mathcal A\to\mathcal F,
 - 它能替代具体领域的数学工具；
 - 它是一个通用 solver。
 
-公开理论的版本关系和阅读路线见[理论导航](theory/README.md)，各项结论的前提与证据状态见[定理账本](theory/02_THEOREM_LEDGER.md)，本次实际复核范围见[仓库核对记录](docs/REPOSITORY_AUDIT_2026-10-01.md)。
+公开理论的版本关系和阅读路线见[理论导航](theory/README.md)。C2 的结论范围见[严格评估和测试](theory/C2/02_EVALUATION_AND_TESTS.md)，继承的领域结论仍须查阅[C1 定理账本](theory/02_THEOREM_LEDGER.md)与[订正表](theory/03_CORRECTIONS_AND_NO_GO.md)。本次实际复核范围见[C2 发布核对](docs/C2_PUBLICATION_2026-10-01.md)。

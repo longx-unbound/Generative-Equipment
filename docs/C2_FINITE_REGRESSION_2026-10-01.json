@@ -1,0 +1,291 @@
+{
+  "schema": "ge-c2-finite-regression-v1",
+  "run_at_utc": "2026-10-01T18:54:27.266675+00:00",
+  "python": "3.12.14",
+  "status": "PASS",
+  "check_groups": 20,
+  "passed_groups": 20,
+  "scope": "Exact finite regressions plus Frozen byte identity; not AI evaluation, not proof-assistant certification.",
+  "checks": [
+    {
+      "id": "V01-types",
+      "paper_cases": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "status": "PASS",
+      "details": {
+        "fiber_size": 0,
+        "comma_size": 1,
+        "core_objects": 1,
+        "endomorphisms": 2,
+        "invertible_endomorphisms": 1
+      }
+    },
+    {
+      "id": "V02-matching",
+      "paper_cases": [
+        "T04"
+      ],
+      "status": "PASS",
+      "details": {
+        "nonempty_local_sets": 2,
+        "common_matching_fiber_size": 0
+      }
+    },
+    {
+      "id": "V03-thresholds",
+      "paper_cases": [
+        "T06"
+      ],
+      "status": "PASS",
+      "details": {
+        "threshold_instances": 16,
+        "scope": "finite checks of witnesses; infinite/cofinality proof is ES5"
+      }
+    },
+    {
+      "id": "V04-localization",
+      "paper_cases": [
+        "T08",
+        "T09"
+      ],
+      "status": "PASS",
+      "details": {
+        "exponent_instances": 17,
+        "scope": "finite formula checks for ES6, not enumeration of an infinite product"
+      }
+    },
+    {
+      "id": "V05-lex-boundary",
+      "paper_cases": [
+        "T11"
+      ],
+      "status": "PASS",
+      "details": {
+        "finite_product_cases": 27,
+        "equalizer_preservation": false,
+        "scope": "arbitrary products require choice; proof in evaluation"
+      }
+    },
+    {
+      "id": "V06-two-axes",
+      "paper_cases": [
+        "T12",
+        "T13",
+        "T14",
+        "T15"
+      ],
+      "status": "PASS",
+      "details": {
+        "four_combinations": [
+          {
+            "case": "R+C+",
+            "R": true,
+            "C": true
+          },
+          {
+            "case": "R-C+",
+            "R": false,
+            "C": true
+          },
+          {
+            "case": "R-C-",
+            "R": false,
+            "C": false
+          },
+          {
+            "case": "R+C-",
+            "R": true,
+            "C": false
+          }
+        ],
+        "poset_collage_objects": 6
+      }
+    },
+    {
+      "id": "V07-Q8-splitting",
+      "paper_cases": [
+        "T16",
+        "T32"
+      ],
+      "status": "PASS",
+      "details": {
+        "normalized_sections_tested": 8,
+        "homomorphic_sections": 0,
+        "cocycle_equations": 64,
+        "group_associativity_triples": 512
+      }
+    },
+    {
+      "id": "V08-Q8-composition",
+      "paper_cases": [
+        "T16"
+      ],
+      "status": "PASS",
+      "details": {
+        "compositors_tested": 16,
+        "all_bijective": true,
+        "scope": "nonsplitting in previous test is not compositor failure"
+      }
+    },
+    {
+      "id": "V09-split-control",
+      "paper_cases": [
+        "T17"
+      ],
+      "status": "PASS",
+      "details": {
+        "normalized_sections_tested": 8,
+        "homomorphic_sections": 4
+      }
+    },
+    {
+      "id": "V10-static-compression",
+      "paper_cases": [
+        "T18"
+      ],
+      "status": "PASS",
+      "details": {
+        "observation_subsets_checked": 16,
+        "target_relative_counterexample": true
+      }
+    },
+    {
+      "id": "V11-dynamic-compression",
+      "paper_cases": [
+        "T20"
+      ],
+      "status": "PASS",
+      "details": {
+        "states_before": 4,
+        "states_after": 3,
+        "blocks": [
+          [
+            0,
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "strict_refinements": 1
+      }
+    },
+    {
+      "id": "V12-search-lift",
+      "paper_cases": [
+        "T21"
+      ],
+      "status": "PASS",
+      "details": {
+        "finite_labeled_paths_checked": 252,
+        "invalid_static_quotient_rejected": true
+      }
+    },
+    {
+      "id": "V13-composition-info",
+      "paper_cases": [
+        "T22"
+      ],
+      "status": "PASS",
+      "details": {
+        "same_objects_arrows_units": true,
+        "same_composition": false
+      }
+    },
+    {
+      "id": "V14-metric",
+      "paper_cases": [
+        "T23",
+        "T24"
+      ],
+      "status": "PASS",
+      "details": {
+        "ordered_pairs": 25,
+        "delta": 2,
+        "maximum_loss": 4,
+        "bound_sharp": true
+      }
+    },
+    {
+      "id": "V15-promotion",
+      "paper_cases": [
+        "T25",
+        "T27"
+      ],
+      "status": "PASS",
+      "details": {
+        "power_function_instances": 32,
+        "c00_unit_vector_instances": 16,
+        "scope": "finite witnesses; compactness/Baire theorems are paper proofs"
+      }
+    },
+    {
+      "id": "V16-doctrine",
+      "paper_cases": [
+        "T30",
+        "T31"
+      ],
+      "status": "PASS",
+      "details": {
+        "automorphisms": 6,
+        "unmarked_fixed_lines": 0,
+        "marked_fixed_lines": 1,
+        "invariant_probability_exists": true
+      }
+    },
+    {
+      "id": "V17-repair",
+      "paper_cases": [
+        "T33"
+      ],
+      "status": "PASS",
+      "details": {
+        "maps_from_G_coproduct_D": 8,
+        "mapping_property_bijection": true,
+        "scope": "finite Set instance of F6"
+      }
+    },
+    {
+      "id": "V18-provenance",
+      "paper_cases": [
+        "T36"
+      ],
+      "status": "PASS",
+      "details": {
+        "valid_alternative_preserves_conclusion": true,
+        "invalid_only_path_rejected": true
+      }
+    },
+    {
+      "id": "V19-approximate-paths",
+      "paper_cases": [
+        "T37",
+        "T38"
+      ],
+      "status": "PASS",
+      "details": {
+        "exact_rational_instances": 40,
+        "L_values": [
+          "1",
+          "1/2"
+        ],
+        "scope": "finite equality checks of the general IC4 proof"
+      }
+    },
+    {
+      "id": "V20-source-integrity",
+      "paper_cases": [],
+      "status": "PASS",
+      "details": {
+        "sha256": "753f2cf7c6da8aae50cf4ea56d5807bae2747ce509c1d2d0522be2189ba6086d",
+        "byte_identical_to_recorded_source": true
+      }
+    }
+  ]
+}
